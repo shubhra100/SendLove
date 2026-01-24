@@ -78,7 +78,7 @@ ImageUrl	nvarchar(300)
 
 ⚙️ Setup Instructions :
 1️⃣ Clone the Repository
-git clone https://github.com/your-username/SendLove.git
+git clone https://github.com/shubhra100/SendLove.git
 2️⃣ Open in Visual Studio
 Open SendLove.sln
 Make sure .NET 8 SDK is installed
