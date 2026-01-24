@@ -1,0 +1,79 @@
+﻿@model List<SendLove.Models.Product>
+
+<h2 class="text-center mb-3">
+    Products for @ViewBag.Occasion
+</h2>
+@if (ViewBag.Occasion != "MothersDay" && ViewBag.Occasion != "FathersDay")
+{
+    <div class="text-center mb-3">
+        <a href="/Product/Index?occasion=@ViewBag.Occasion&gender=Her">For Her</a> |
+        <a href="/Product/Index?occasion=@ViewBag.Occasion&gender=Him">For Him</a> |
+        <a href="/Product/Index?occasion=@ViewBag.Occasion">Any</a>
+    </div>
+}
+
+<div class="product-grid">
+    @foreach (var p in Model)
+    {
+        <div class="product-card">
+            <img src="@p.ImageUrl" alt="@p.Name" />
+
+            <h4>@p.Name</h4>
+            <div class="price">₹@p.Price</div>
+
+            <div class="qty-control">
+                <button onclick="remove(@p.Id, @p.Price)">−</button>
+                <span id="qty-@p.Id">0</span>
+                <button onclick="add(@p.Id, @p.Price)">+</button>
+            </div>
+        </div>
+
+    }
+</div>
+
+<div id="cartBar">
+    <div style="font-size:18px;">
+        Total: ₹<span id="total">0</span>
+    </div>
+
+    <a asp-controller="Checkout"
+       asp-action="Index"
+       id="proceedBtn">
+        Proceed →
+    </a>
+</div>
+
+<script>
+    let total = 0;
+
+    function updateBar() {
+        let bar = document.getElementById("cartBar");
+        let btn = document.getElementById("proceedBtn");
+
+        if (total > 0) {
+            bar.style.display = "flex";
+        } else {
+            bar.style.display = "none";
+        }
+
+        document.getElementById("total").innerText = total;
+        btn.href = "/Checkout/Index?total=" + total;
+    }
+
+    function add(id, price) {
+        let qty = document.getElementById("qty-" + id);
+        qty.innerText = parseInt(qty.innerText) + 1;
+        total += price;
+        updateBar();
+    }
+
+    function remove(id, price) {
+        let qty = document.getElementById("qty-" + id);
+        let current = parseInt(qty.innerText);
+        if (current > 0) {
+            qty.innerText = current - 1;
+            total -= price;
+            updateBar();
+        }
+    }
+</script>

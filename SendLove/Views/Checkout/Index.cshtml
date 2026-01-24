@@ -1,0 +1,35 @@
+﻿<h2 style="text-align:center;">Checkout</h2>
+
+<h3 style="text-align:center;color:#ff4d6d;">
+    Total Amount: ₹@ViewBag.Total
+</h3>
+
+<form style="
+    max-width:500px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+">
+    <input placeholder="Your Name" required />
+    <input placeholder="Mobile Number" required />
+    <textarea placeholder="Delivery Address" required></textarea>
+
+    <select required>
+        <option value="">Select Delivery Time</option>
+        <option>Same Day</option>
+        <option>Midnight</option>
+    </select>
+
+    <button style="
+        padding:12px;
+        background:#ff4d6d;
+        color:white;
+        border:none;
+        border-radius:25px;
+        font-size:16px;
+    ">
+        Place Order ❤️
+    </button>
+</form>
+

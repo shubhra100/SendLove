@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>SendLove</title>
+
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+
+    <!-- Top Zara Style Header -->
+    <header class="top-bar">
+        <div class="logo-area">
+            <img src="/images/logo/logo.png" class="logo" />
+        </div>
+
+
+        <div class="top-links">
+            <a href="/Occasion">Choose Occasion</a>
+            <a href="/Account/Login">Login</a>
+        </div>
+    </header>
+
+    <!-- Zara Scroll Area -->
+    <div class="zara-scroll">
+        @RenderBody()
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        © 2026 - SendLove
+    </footer>
+
+    <!-- Logo Scroll Effect -->
+    <script>
+        window.addEventListener("scroll", function () {
+            let logo = document.querySelector(".logo");
+            let y = window.scrollY;
+            logo.style.transform = "translateY(" + (y * 0.2) + "px)";
+        });
+    </script>
+
+</body>
+</html>

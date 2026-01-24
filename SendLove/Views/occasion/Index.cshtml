@@ -1,0 +1,155 @@
+﻿<h2 style="text-align:center;margin-bottom:30px;font-weight:600;">
+    Choose Your Occasion
+</h2>
+
+<!-- OCCASION CARDS -->
+<div class="occasion-grid">
+
+    <a asp-controller="Product" asp-action="Index" asp-route-occasion="Birthday" class="occasion-card birthday">
+        <h3>🎂 Birthday</h3>
+        <p>Make their day special with cakes, flowers and gifts</p>
+    </a>
+
+    <a asp-controller="Product" asp-action="Index" asp-route-occasion="MothersDay" class="occasion-card mother">
+        <h3>🌸 Mother’s Day</h3>
+        <p>Show love to the woman who raised you</p>
+    </a>
+
+    <a asp-controller="Product" asp-action="Index" asp-route-occasion="FathersDay" class="occasion-card father">
+        <h3>👔 Father’s Day</h3>
+        <p>Thank your hero</p>
+    </a>
+
+    <a asp-controller="Product" asp-action="Index" asp-route-occasion="FriendshipDay" class="occasion-card friendship">
+        <h3>🤝 Friendship</h3>
+        <p>Celebrate beautiful bonds</p>
+    </a>
+
+    <a asp-controller="Product" asp-action="Index" asp-route-occasion="ValentinesDay" class="occasion-card valentine">
+        <h3>❤️ Valentine’s Day</h3>
+        <p>Romantic gifts for someone special</p>
+    </a>
+
+    <a asp-controller="Product" asp-action="Index" asp-route-occasion="MissYou" class="occasion-card missyou">
+        <h3>💙 Miss You</h3>
+        <p>Tell them they are always in your heart</p>
+    </a>
+
+    <a asp-controller="Product" asp-action="Index" asp-route-occasion="Sorry" class="occasion-card sorry">
+        <h3>🙏 Sorry</h3>
+        <p>Say sorry with a thoughtful surprise</p>
+    </a>
+
+    <a asp-controller="Product" asp-action="Index" asp-route-occasion="ThankYou" class="occasion-card thankyou">
+        <h3>🌷 Thank You</h3>
+        <p>Express your gratitude</p>
+    </a>
+
+    
+
+</div>
+
+<hr style="margin:60px 0;">
+
+<h2 style="text-align:center;margin-bottom:30px;">Buy Gifts For</h2>
+
+<!-- BUY FOR SECTION -->
+<div class="buyfor-grid">
+
+    <a asp-controller="Product" asp-action="Index" asp-route-gender="Any" class="occasion-card self">
+        <h3>🧍‍♂️ Yourself</h3>
+        <p>Buy something special for you</p>
+    </a>
+
+    <a asp-controller="Product" asp-action="Index" asp-route-gender="Her" class="occasion-card her">
+        <h3>👩 For Her</h3>
+        <p>Gifts for girlfriend, wife, sister or mom</p>
+    </a>
+
+    <a asp-controller="Product" asp-action="Index" asp-route-gender="Him" class="occasion-card him">
+        <h3>👨 For Him</h3>
+        <p>Gifts for boyfriend, husband or brother</p>
+    </a>
+
+</div>
+
+<style>
+    .occasion-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 25px;
+        max-width: 1100px;
+        margin: auto;
+    }
+
+    .buyfor-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+        max-width: 900px;
+        margin: auto;
+    }
+
+    .occasion-card {
+        background: #ffe6f0;
+        padding: 30px 25px;
+        border-radius: 22px;
+        text-decoration: none;
+        color: #333;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+        transition: 0.3s ease;
+    }
+
+        .occasion-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 25px 40px rgba(255,105,180,0.25);
+        }
+
+    .birthday {
+        border-top: 6px solid #ff9f1c;
+    }
+
+    .mother {
+        border-top: 6px solid #ff6b81;
+    }
+
+    .father {
+        border-top: 6px solid #4a90e2;
+    }
+
+    .friendship {
+        border-top: 6px solid #fbc531;
+    }
+
+    .valentine {
+        border-top: 6px solid #ff4757;
+    }
+
+    .missyou {
+        border-top: 6px solid #6c5ce7;
+    }
+
+    .sorry {
+        border-top: 6px solid #636e72;
+    }
+
+    .thankyou {
+        border-top: 6px solid #00b894;
+    }
+
+    .random {
+        border-top: 6px solid #e84393;
+    }
+
+    .self {
+        border-top: 6px solid #fd79a8;
+    }
+
+    .her {
+        border-top: 6px solid #e84393;
+    }
+
+    .him {
+        border-top: 6px solid #2d3436;
+    }
+</style>
