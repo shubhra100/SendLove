@@ -99,7 +99,12 @@ https://localhost:7204
 
 📸 Screenshots :
 Home Page (Hero Section)
+
+
 Occasion Selection
+
+<img width="1809" height="922" alt="Screenshot (575)" src="https://github.com/user-attachments/assets/2244ea09-933f-4584-8a4c-0c6a62f0d684" />
+
 Product Listing
 Cart & Checkout
 (Add screenshots here later)
