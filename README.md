@@ -100,14 +100,17 @@ https://localhost:7204
 📸 Screenshots :
 Home Page (Hero Section)
 
+<img width="1813" height="920" alt="Screenshot (578)" src="https://github.com/user-attachments/assets/971d9192-4e04-4a86-ab45-e33cd1699af3" />
 
 Occasion Selection
 
 <img width="1809" height="922" alt="Screenshot (575)" src="https://github.com/user-attachments/assets/2244ea09-933f-4584-8a4c-0c6a62f0d684" />
 
 Product Listing
-Cart & Checkout
-(Add screenshots here later)
+
+<img width="1901" height="915" alt="Screenshot (577)" src="https://github.com/user-attachments/assets/a782a724-e81c-47f0-b126-71bd428bb275" />
+<img width="1875" height="913" alt="Screenshot (576)" src="https://github.com/user-attachments/assets/0e7d0d32-7d87-4447-9854-89e24f59fd6f" />
+
 
 
 📌 Learning Outcomes :
