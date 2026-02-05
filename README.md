@@ -3,6 +3,7 @@
 SendLove is a full-stack ASP.NET Core MVC web application designed for online gift selection and delivery based on occasions like Birthday, Valentine’s Day, Mother’s Day, Friendship Day, etc.
 The project demonstrates frontend UI design, backend logic, database integration, and MVC architecture.
 
+-------------------------------------------
 Features :
 
 🎁 Browse gifts by occasion (Birthday, Sorry, Thank You, etc.)
@@ -20,6 +21,7 @@ Features :
 🎨 Clean and aesthetic UI inspired by modern ecommerce designs
 
 
+-----------
 Tech Stack :
 
 Frontend
@@ -36,6 +38,7 @@ Microsoft SQL Server (SQLExpress)
 Code-First / Database-First compatible structure
 
 
+----------------
 Project Structure :
 
 SendLove
@@ -68,6 +71,7 @@ SendLove
 └── README.md
 
 
+------------------
 🗄️ Database Schema (Products Table) :
 
 Column	Type
@@ -80,6 +84,7 @@ Price	decimal(10,2)
 ImageUrl	nvarchar(300)
 
 
+-------------------
 ⚙️ Setup Instructions :
 
 1️⃣ Clone the Repository
@@ -102,6 +107,7 @@ Open browser at:
 https://localhost:7204
 
 
+---------------------
 📸 Screenshots :
 
 Home Page (Hero Section)
@@ -119,6 +125,7 @@ Product Listing
 
 
 
+----------------------
 
 📌 Learning Outcomes :
 ASP.NET Core MVC architecture
@@ -129,6 +136,7 @@ Building real-world ecommerce UI
 Debugging backend & database issues  
 
 
+-------------------------------
 🔮 Future Enhancements :
 
 👤 User Authentication & Authorization
@@ -144,13 +152,14 @@ Debugging backend & database issues
 📱 Mobile Responsive UI
 
 
-
+------------------------
 👩‍💻 Author :
 
 Shubhra Divyadarshini
 Fresher | Aspiring Full-Stack / .NET Developer
 Believes in hard work, consistency, and learning by building 🌱
 
+----------------------
 ⭐ Support :
 
 If you like this project, don’t forget to star ⭐ the repository!
